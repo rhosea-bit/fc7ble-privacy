@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FC7BLE Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px;
+         margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #222; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; }
+  p, li { font-size: 1em; }
+  code { background: #f2f2f2; padding: 0 0.25em; border-radius: 3px; }
+  .meta { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>FC7BLE Privacy Policy</h1>
+<p class="meta">Effective date: 2026-04-23 &middot; Last updated: 2026-04-23</p>
+
+<p>
+  FC7BLE ("the app") is a configuration utility for FC7 embedded devices.
+  It communicates with nearby FC7 hardware over Bluetooth Low Energy to
+  read and update the device's network settings. This page describes
+  what data the app accesses, how it is used, and what leaves your
+  device.
+</p>
+
+<h2>TL;DR</h2>
+<p>
+  The app does not collect analytics, does not show ads, does not use
+  any tracking or telemetry SDKs, and does not transmit your data to
+  us or any third party. Everything happens locally between your
+  phone and FC7 devices you own.
+</p>
+
+<h2>Permissions the app requests, and why</h2>
+<ul>
+  <li>
+    <strong>Bluetooth (scan / connect)</strong> — to discover and
+    communicate with FC7 devices in range. Scan results are used only
+    to display a list of nearby FC7s within the app.
+  </li>
+  <li>
+    <strong>Approximate / precise location</strong> — required by
+    Android for Bluetooth Low Energy scanning on Android 6 through 11.
+    The app does <em>not</em> read, record, or transmit your
+    geographic location. No location data is stored.
+  </li>
+</ul>
+
+<h2>Data stored on your device</h2>
+<p>
+  To streamline repeated configuration, the app caches the following
+  locally on your device. None of it is transmitted off the device by
+  the app:
+</p>
+<ul>
+  <li>A list of FC7 Bluetooth MAC addresses encountered during scans.</li>
+  <li>FC7 device names and Ethernet MAC addresses reported by the device.</li>
+  <li>
+    Optional EMS credentials (username and password) you enter, stored
+    per-FC7 so you do not need to re-enter them on every operation.
+    You can clear stored credentials at any time via the
+    "Clear Authentication" button on the device detail screen.
+  </li>
+</ul>
+<p>
+  All of this data is removed when the app is uninstalled.
+</p>
+
+<h2>Data transmitted by the app</h2>
+<ul>
+  <li>
+    <strong>To FC7 devices you select</strong> — the app sends
+    authentication payloads and network configuration values (IP
+    address, netmask, gateway) over Bluetooth Low Energy to the FC7
+    you are configuring. This is the core function of the app.
+  </li>
+  <li>
+    <strong>To Google Play Services</strong> — the app uses Google's
+    In-App Update API to check whether a newer version of itself is
+    available on Google Play and, with your consent, to download and
+    install it. This interaction is handled by Google Play Services
+    on your device and is governed by Google's privacy policy.
+  </li>
+</ul>
+<p>
+  The app does not communicate with any server operated by the
+  developer.
+</p>
+
+<h2>Children's privacy</h2>
+<p>
+  The app is a technical configuration tool intended for professional
+  and adult use. It is not directed to children under 13 and does not
+  knowingly collect any data from children.
+</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>You can revoke Bluetooth or location permissions at any time in
+      Android's system settings. The app will stop working but no
+      leftover data will be retained server-side because none exists.</li>
+  <li>You can clear stored credentials in-app (Clear Authentication).</li>
+  <li>Uninstalling the app removes all locally cached data.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the "Last updated" date above will be
+  revised. Material changes will be noted in the app's release notes.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy or the app's data handling can be sent
+  to:
+</p>
+<p>
+  <strong>[FILL IN: developer or company name]</strong><br>
+  Email: <a href="mailto:mbedded1@gmail.com">mbedded1@gmail.com</a>
+</p>
+
+</body>
+</html>
